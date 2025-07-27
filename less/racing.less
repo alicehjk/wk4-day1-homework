@@ -1,0 +1,30 @@
+@import 'colors.less';
+@import 'fonts.less';
+
+.box-style() {
+  background: @primary;
+  color: @white;
+  padding: 10px;
+  text-align: center;
+}
+
+body {
+  font-family: @main-font;
+  color: @text;
+
+  h1 {
+    font-family: @heading-font;
+    color: @primary;
+  }
+
+  .highlight {
+    .box-style();
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+
+  p.note {
+    color: @gray;
+    font-size: 0.9rem;
+  }
+}
